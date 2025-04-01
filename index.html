@@ -11,7 +11,7 @@
     <h1 class="title">Rock, Paper, Scissors</h1>
     <div class="container">
       <div class="background">
-        <div class="display">
+        <div class="display" id="display">
           <div id="computer-display">
             <span>Computer:</span>
             <p id="com-output">🗿</p>
@@ -21,15 +21,16 @@
             <p id="user-output">📄</p>
           </div>
         </div>
+        <p id="result"></p>
         <div class="controls">
           <div>
-            <button class="btn" onclick="choose('rock')">🗿</button>
+            <button class="btn" onclick="choose('🗿')">🗿</button>
           </div>
           <div>
-            <button class="btn" onclick="choose('paper')">📄</button>
+            <button class="btn" onclick="choose('📄')">📄</button>
           </div>
           <div>
-            <button class="btn" onclick="choose('scissors')">✂️</button>
+            <button class="btn" onclick="choose('✂️')">✂️</button>
           </div>
         </div>
       </div>

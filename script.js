@@ -14,10 +14,12 @@ document.querySelectorAll("button").forEach((btn) => {
 });
 
 var user_choice;
+var computer;
 
 async function choose(choice) {
   reset();
   lockButtons();
+  computer = generateComputer();
   switch (choice) {
     case "🗿":
       user_choice = choice;
@@ -57,7 +59,8 @@ async function rollAnimation() {
       await sleep(index * 10);
     }
   }
-  await sleep(250);
+  document.getElementById("com-output").innerHTML = computer;
+  await sleep(100);
 }
 
 function sleep(ms) {
@@ -65,10 +68,6 @@ function sleep(ms) {
 }
 
 function compare() {
-  computer = generateComputer();
-
-  document.getElementById("com-output").innerHTML = computer;
-
   switch (computer) {
     case "🗿":
       switch (user_choice) {
@@ -131,7 +130,7 @@ function tie() {
 }
 
 function lose() {
-  document.getElementById("display").classList.add("tie");
+  document.getElementById("display").classList.add("lose");
   document.getElementById("result").innerHTML = "You lost!!";
 }
 

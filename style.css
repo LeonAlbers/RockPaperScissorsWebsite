@@ -21,6 +21,7 @@ body {
   text-align: left;
   color: white;
   text-shadow: 3px 3px 2px rgb(50, 50, 50);
+  cursor: pointer;
 }
 
 .container {

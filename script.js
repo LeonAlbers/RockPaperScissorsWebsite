@@ -19,12 +19,17 @@ function choose(choice) {
   switch (choice) {
     case "rock":
       user_choice = choice;
+      document.getElementById("user-output").innerHTML = "🗿";
       break;
     case "paper":
       user_choice = choice;
+      document.getElementById("user-output").innerHTML = "📄";
+
       break;
     case "scissors":
       user_choice = choice;
+      document.getElementById("user-output").innerHTML = "✂️";
+
       break;
     default:
       break;

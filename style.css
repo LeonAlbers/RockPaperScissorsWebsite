@@ -181,6 +181,8 @@ body {
   font-size: 25px;
   text-align: center;
   height: 25px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .counter {
@@ -197,10 +199,6 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: row;
-}
-
-.counter p {
-  margin-top: 10px;
 }
 
 .game-counter {

@@ -38,7 +38,6 @@ body {
   background-color: rgb(80, 80, 80);
   height: 70%;
   width: 40%;
-  max-width: 40%;
   max-width: 1800px;
   min-width: fit-content;
   border-radius: 15px;
@@ -48,6 +47,7 @@ body {
   padding: 25px;
   padding-top: 5px;
   box-shadow: 5px 2px 20px 1px rgb(50, 50, 50);
+  min-width: 400px;
 }
 
 .display {
@@ -105,7 +105,7 @@ body {
   min-width: fit-content;
   display: flex;
   justify-content: space-between;
-  margin-top: 200px;
+  margin-top: 100px;
   gap: 20px;
   background-color: rgb(85, 85, 85);
   box-shadow: 2px 2px 7px 2px rgb(50, 50, 50);
@@ -178,9 +178,37 @@ body {
 
 #result {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
   text-align: center;
+}
+
+.counter {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.counter div {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.counter p {
+  margin-top: 10px;
+}
+
+.game-counter {
+  display: flex;
+  font-size: 30px;
+  gap: 40px;
+}
+
+.game-counter p {
+  margin-bottom: 0;
 }

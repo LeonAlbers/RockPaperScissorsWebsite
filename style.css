@@ -48,6 +48,7 @@ body {
   padding-top: 5px;
   box-shadow: 5px 2px 20px 1px rgb(50, 50, 50);
   min-width: 400px;
+  max-width: 900px;
 }
 
 .display {
@@ -105,7 +106,7 @@ body {
   min-width: fit-content;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 20px;
   gap: 20px;
   background-color: rgb(85, 85, 85);
   box-shadow: 2px 2px 7px 2px rgb(50, 50, 50);
@@ -177,12 +178,9 @@ body {
 }
 
 #result {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 25px;
   text-align: center;
+  height: 25px;
 }
 
 .counter {

@@ -59,7 +59,7 @@ async function rollAnimation() {
     for (let j = 0; j < options.length; j++) {
       const element = options[j];
       document.getElementById("com-output").innerHTML = element;
-      await sleep(index * 1);
+      await sleep(index * 10);
     }
   }
   document.getElementById("com-output").innerHTML = computer;
